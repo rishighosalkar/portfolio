@@ -74,67 +74,67 @@ export const PROJECTS: Project[] = [
     category: [".NET", "Microservices"],
   },
   {
-    id: "nlp-analyzer",
-    title: "NLP Text Analysis Engine",
+    id: "chunkstream",
+    title: "ChunkStream — Large File Uploads to S3",
     description:
-      "An intelligent text analysis application leveraging NLP techniques for sentiment analysis, entity extraction, and document summarization.",
-    techStack: ["Python", ".NET", "React", "TypeScript", "AWS Lambda"],
+      "A resilient, chunked file upload system for handling large files to AWS S3. Splits files into configurable chunks, uploads in parallel with retry logic, and reassembles on the server side.",
+    techStack: [".NET", "C#", "AWS S3", "React", "TypeScript"],
     github: "https://github.com/rishighosalkar",
     highlights: [
-      "Real-time sentiment analysis pipeline",
-      "REST API with .NET backend orchestration",
-      "React dashboard with interactive visualizations",
-      "Serverless processing with AWS Lambda",
+      "Multipart chunked uploads with configurable chunk size",
+      "Parallel upload with automatic retry on failure",
+      "Server-side reassembly and S3 multipart upload API integration",
+      "Progress tracking and resumable upload support",
     ],
-    category: ["AI", ".NET", "React"],
-  },
-  {
-    id: "ecommerce-platform",
-    title: "Microservices E-Commerce Platform",
-    description:
-      "A scalable e-commerce backend demonstrating clean architecture principles with independently deployable services for catalog, cart, identity, and payment.",
-    techStack: [".NET", "React", "AWS", "SQL Server", "Docker", "MediatR"],
-    github: "https://github.com/rishighosalkar",
-    highlights: [
-      "Clean Architecture with CQRS using MediatR",
-      "API Gateway pattern with Ocelot",
-      "JWT-based authentication & authorization",
-      "Automated CI/CD with GitHub Actions",
-    ],
-    category: [".NET", "React", "Microservices"],
-  },
-  {
-    id: "realtime-chat",
-    title: "Real-Time Chat Application",
-    description:
-      "A SignalR-powered real-time messaging application with group chats, typing indicators, and message persistence.",
-    techStack: [".NET", "SignalR", "React", "TypeScript", "Redis"],
-    github: "https://github.com/rishighosalkar",
-    highlights: [
-      "WebSocket communication via SignalR",
-      "Redis pub/sub for horizontal scaling",
-      "React frontend with optimistic UI updates",
-      "Message history with infinite scroll",
-    ],
-    category: [".NET", "React"],
+    category: [".NET", "React", "AWS"],
   },
 ];
 
 export const EXPERIENCE: Experience[] = [
   {
-    company: "Cornerstone OnDemand",
-    role: ".NET Full Stack Developer",
-    period: "Present",
+    company: "Cornerstone OnDemand — Mumbai, India",
+    role: "Software Engineer",
+    period: "Oct 2024 – Present",
     description:
-      "Building and maintaining enterprise-scale talent management solutions serving millions of users globally. Working across the full stack with .NET backend services and modern frontend technologies.",
+      "Building serverless data pipelines and microservices for enterprise talent management at scale.",
     achievements: [
-      "Developed microservices handling 10K+ requests/min with .NET and AWS",
-      "Led migration of legacy monolith modules to event-driven microservices",
-      "Implemented CQRS pattern reducing query response times by 40%",
-      "Built React-based admin dashboards improving internal team productivity",
-      "Collaborated with cross-functional teams across global offices",
+      "Designed and implemented serverless AWS Lambda functions in .NET to replicate and rehydrate DynamoDB Streams into S3, enabling reliable disaster recovery and distributed data pipelines",
+      "Built and enhanced microservice-based REST APIs using ASP.NET Core and C#, improving scalability and maintainability across production services",
+      "Designed custom ASP.NET Core middleware for distributed tracing and runtime request instrumentation, reducing mean-time-to-resolve production issues",
+      "Identified and remediated Docker image and open-source security vulnerabilities, strengthening cloud-native application security posture",
+      "Analyzed and resolved SAST/SCA-reported vulnerabilities (Black Duck) by upgrading vulnerable transitive dependencies and enforcing secure package management",
+      "Performed root cause analysis on production-critical client incidents and implemented permanent fixes, reducing recurring issue rate",
+      "Collaborated in Agile/Scrum teams — decomposing epics, estimating stories, and consistently delivering sprint commitments",
     ],
-    techStack: ["C#", ".NET", "React", "TypeScript", "AWS", "SQL Server"],
+    techStack: ["C#", ".NET", "AWS Lambda", "DynamoDB", "S3", "Docker", "ASP.NET Core"],
+  },
+  {
+    company: "Diebold Nixdorf — Mumbai, India",
+    role: "Software Development Engineer",
+    period: "Apr 2024 – Oct 2024",
+    description:
+      "Developed test automation frameworks for ATM and POS systems with a focus on concurrency and performance.",
+    achievements: [
+      "Developed a multithreaded test automation framework for ATM and POS systems using .NET Core and C#, enabling concurrent execution and supporting performance-critical test scenarios",
+      "Optimised application responsiveness and throughput under high-concurrency workloads, improving overall system reliability and execution efficiency",
+    ],
+    techStack: ["C#", ".NET Core", "Multithreading", "Test Automation"],
+  },
+  {
+    company: "Accenture — Mumbai, India",
+    role: "Software Engineering Analyst",
+    period: "Aug 2021 – Apr 2024",
+    description:
+      "Designed and maintained RESTful APIs and microservices for enterprise-scale clients across distributed architectures.",
+    achievements: [
+      "Designed, developed, and maintained RESTful APIs using ASP.NET Core and C# within distributed microservices architectures",
+      "Implemented rate limiting and in-memory/distributed caching strategies, significantly improving API scalability and reducing latency",
+      "Built secure APIs with OAuth2-based authentication and authorization, ensuring regulatory compliance",
+      "Designed and optimised Oracle SQL stored procedures, improving backend data processing efficiency",
+      "Enhanced frontend performance and state management using React and Redux, reducing render latency",
+      "Mentored junior developers on SOLID principles, clean architecture, and code review best practices",
+    ],
+    techStack: ["C#", "ASP.NET Core", "React", "Redux", "Oracle SQL", "OAuth2"],
   },
 ];
 
@@ -172,4 +172,4 @@ export const SOCIAL_LINKS = {
   email: "rushikeshghosalkar023@gmail.com",
 };
 
-export const PROJECT_FILTERS = ["All", ".NET", "React", "AI", "Microservices"];
+export const PROJECT_FILTERS = ["All", ".NET", "React", "AWS", "Microservices"];

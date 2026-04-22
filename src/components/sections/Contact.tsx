@@ -52,7 +52,7 @@ export default function Contact() {
             </div>
 
             <a
-              href="/resume.pdf"
+              href="/Rushikesh_Ghosalkar_Software_Engineer.pdf"
               download
               className="mt-8 inline-flex items-center gap-2 rounded-lg bg-primary/10 px-5 py-3 text-sm font-medium text-primary ring-1 ring-primary/30 transition-all hover:bg-primary/20"
             >
