@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
-import { Send, Github, Linkedin, Download, Mail } from "lucide-react";
+import { Send, Download, Mail } from "lucide-react";
+import { GitHubIcon, LinkedInIcon } from "../ui/BrandIcons";
 import SectionHeading from "../ui/SectionHeading";
 import { SOCIAL_LINKS } from "../../data/portfolio";
 
@@ -43,10 +44,10 @@ export default function Contact() {
                 <Mail size={18} /> {SOCIAL_LINKS.email}
               </a>
               <a href={SOCIAL_LINKS.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-gray-400 transition-colors hover:text-primary">
-                <Github size={18} /> GitHub
+                <GitHubIcon /> GitHub
               </a>
               <a href={SOCIAL_LINKS.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-gray-400 transition-colors hover:text-primary">
-                <Linkedin size={18} /> LinkedIn
+                <LinkedInIcon /> LinkedIn
               </a>
             </div>
 

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ExternalLink, Github, ChevronDown, ChevronUp } from "lucide-react";
+import { ExternalLink, ChevronDown, ChevronUp } from "lucide-react";
+import { GitHubIcon } from "../ui/BrandIcons";
 import SectionHeading from "../ui/SectionHeading";
 import { PROJECTS, PROJECT_FILTERS } from "../../data/portfolio";
 
@@ -51,7 +52,7 @@ export default function Projects() {
                     <div className="flex gap-2">
                       {project.github && (
                         <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary" aria-label="GitHub">
-                          <Github size={18} />
+                          <GitHubIcon />
                         </a>
                       )}
                       {project.live && (

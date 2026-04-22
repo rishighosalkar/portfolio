@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, FileText } from "lucide-react";
+import { ArrowDown, FileText } from "lucide-react";
+import { GitHubIcon, LinkedInIcon } from "../ui/BrandIcons";
 import { SOCIAL_LINKS } from "../../data/portfolio";
 
 const TYPING_LINES = [
@@ -52,22 +53,15 @@ export default function Hero() {
             </div>
 
             <div className="mt-8 flex items-center gap-4">
-              {[
-                { icon: Github, href: SOCIAL_LINKS.github, label: "GitHub" },
-                { icon: Linkedin, href: SOCIAL_LINKS.linkedin, label: "LinkedIn" },
-                { icon: FileText, href: SOCIAL_LINKS.medium, label: "Blog" },
-              ].map(({ icon: Icon, href, label }) => (
-                <a
-                  key={label}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-lg border border-white/5 bg-surface-light p-2.5 text-gray-400 transition-all hover:border-primary/30 hover:text-primary"
-                  aria-label={label}
-                >
-                  <Icon size={18} />
-                </a>
-              ))}
+              <a href={SOCIAL_LINKS.github} target="_blank" rel="noopener noreferrer" className="rounded-lg border border-white/5 bg-surface-light p-2.5 text-gray-400 transition-all hover:border-primary/30 hover:text-primary" aria-label="GitHub">
+                <GitHubIcon />
+              </a>
+              <a href={SOCIAL_LINKS.linkedin} target="_blank" rel="noopener noreferrer" className="rounded-lg border border-white/5 bg-surface-light p-2.5 text-gray-400 transition-all hover:border-primary/30 hover:text-primary" aria-label="LinkedIn">
+                <LinkedInIcon />
+              </a>
+              <a href={SOCIAL_LINKS.medium} target="_blank" rel="noopener noreferrer" className="rounded-lg border border-white/5 bg-surface-light p-2.5 text-gray-400 transition-all hover:border-primary/30 hover:text-primary" aria-label="Blog">
+                <FileText size={18} />
+              </a>
             </div>
           </motion.div>
 
