@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { NAV_ITEMS } from "../../data/portfolio";
-import { useActiveSection } from "../../hooks/useActiveSection";
+import { NAV_ITEMS } from "../data/portfolio";
+import { useActiveSection } from "../hooks/useActiveSection";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);

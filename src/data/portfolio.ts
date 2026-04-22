@@ -64,7 +64,7 @@ export const PROJECTS: Project[] = [
     description:
       "A high-throughput, event-driven order processing platform built with microservices architecture. Handles order lifecycle from placement to fulfillment with saga-based distributed transactions.",
     techStack: [".NET", "C#", "RabbitMQ", "PostgreSQL", "Docker", "Redis"],
-    github: "https://github.com/rushikeshghosalkar",
+    github: "https://github.com/rishighosalkar",
     highlights: [
       "Saga pattern for distributed transaction management",
       "Event sourcing with CQRS for order state management",
@@ -79,7 +79,7 @@ export const PROJECTS: Project[] = [
     description:
       "An intelligent text analysis application leveraging NLP techniques for sentiment analysis, entity extraction, and document summarization.",
     techStack: ["Python", ".NET", "React", "TypeScript", "AWS Lambda"],
-    github: "https://github.com/rushikeshghosalkar",
+    github: "https://github.com/rishighosalkar",
     highlights: [
       "Real-time sentiment analysis pipeline",
       "REST API with .NET backend orchestration",
@@ -94,7 +94,7 @@ export const PROJECTS: Project[] = [
     description:
       "A scalable e-commerce backend demonstrating clean architecture principles with independently deployable services for catalog, cart, identity, and payment.",
     techStack: [".NET", "React", "AWS", "SQL Server", "Docker", "MediatR"],
-    github: "https://github.com/rushikeshghosalkar",
+    github: "https://github.com/rishighosalkar",
     highlights: [
       "Clean Architecture with CQRS using MediatR",
       "API Gateway pattern with Ocelot",
@@ -109,7 +109,7 @@ export const PROJECTS: Project[] = [
     description:
       "A SignalR-powered real-time messaging application with group chats, typing indicators, and message persistence.",
     techStack: [".NET", "SignalR", "React", "TypeScript", "Redis"],
-    github: "https://github.com/rushikeshghosalkar",
+    github: "https://github.com/rishighosalkar",
     highlights: [
       "WebSocket communication via SignalR",
       "Redis pub/sub for horizontal scaling",
@@ -142,34 +142,34 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     title: "Saga Pattern in Microservices",
     description: "Deep dive into orchestrating distributed transactions using the Saga pattern with practical .NET examples.",
-    url: "https://medium.com/@rushikeshghosalkar",
+    url: "https://medium.com/@rushikeshghosalkar023",
     tags: ["Microservices", ".NET"],
   },
   {
     title: "CQRS: Beyond the Basics",
     description: "Implementing Command Query Responsibility Segregation with MediatR and Event Sourcing in production systems.",
-    url: "https://medium.com/@rushikeshghosalkar",
+    url: "https://medium.com/@rushikeshghosalkar023",
     tags: ["Architecture", "CQRS"],
   },
   {
     title: "Strangler Fig Pattern",
     description: "A practical guide to incrementally migrating legacy monoliths to microservices without downtime.",
-    url: "https://medium.com/@rushikeshghosalkar",
+    url: "https://medium.com/@rushikeshghosalkar023",
     tags: ["Microservices", "Migration"],
   },
   {
     title: "System Design: URL Shortener",
     description: "Designing a scalable URL shortening service — from requirements gathering to database sharding strategies.",
-    url: "https://medium.com/@rushikeshghosalkar",
+    url: "https://medium.com/@rushikeshghosalkar023",
     tags: ["System Design"],
   },
 ];
 
 export const SOCIAL_LINKS = {
-  github: "https://github.com/rushikeshghosalkar",
-  linkedin: "https://linkedin.com/in/rushikeshghosalkar",
-  medium: "https://medium.com/@rushikeshghosalkar",
-  email: "rushikesh.ghosalkar@example.com",
+  github: "https://github.com/rishighosalkar",
+  linkedin: "https://linkedin.com/in/rushikesh-ghosalkar-4a364819a",
+  medium: "https://medium.com/@rushikeshghosalkar023",
+  email: "rushikeshghosalkar023@gmail.com",
 };
 
 export const PROJECT_FILTERS = ["All", ".NET", "React", "AI", "Microservices"];
