@@ -68,8 +68,9 @@ export default function Contact() {
             </div>
 
             <a
-              href="/Rushikesh_Ghosalkar_Software_Engineer.pdf"
-              download
+              href="https://drive.google.com/file/d/1m62D5Fo4OdPdWGt3XlPcp8FWrEC9pBz2/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-8 inline-flex items-center gap-2 rounded-lg bg-primary/10 px-5 py-3 text-sm font-medium text-primary ring-1 ring-primary/30 transition-all hover:bg-primary/20"
             >
               <Download size={16} /> Download Resume
