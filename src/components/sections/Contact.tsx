@@ -1,6 +1,7 @@
-import { useState, type FormEvent } from "react";
+import { useState, type FormEvent, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Send, Download, Mail } from "lucide-react";
+import emailjs from "@emailjs/browser";
 import { GitHubIcon, LinkedInIcon } from "../ui/BrandIcons";
 import SectionHeading from "../ui/SectionHeading";
 import { SOCIAL_LINKS } from "../../data/portfolio";
@@ -9,12 +10,27 @@ export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
+  useEffect(() => {
+    // Initialize EmailJS with your public key
+    emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "");
+  }, []);
+
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setStatus("sending");
-    // Replace with EmailJS or your own API endpoint
+    
     try {
-      await new Promise((r) => setTimeout(r, 1000)); // Simulated send
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID || "",
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "",
+        {
+          from_name: form.name,
+          from_email: form.email,
+          to_email: SOCIAL_LINKS.email,
+          message: form.message,
+        }
+      );
+      
       setStatus("sent");
       setForm({ name: "", email: "", message: "" });
       setTimeout(() => setStatus("idle"), 3000);
