@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Target, Lightbulb, Globe } from "lucide-react";
+import { Target, Globe } from "lucide-react";
 import SectionHeading from "../ui/SectionHeading";
 import GlassCard from "../ui/GlassCard";
 
