@@ -139,28 +139,28 @@ export const EXPERIENCE: Experience[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    title: "Saga Pattern in Microservices",
-    description: "Deep dive into orchestrating distributed transactions using the Saga pattern with practical .NET examples.",
+    title: "How Large Files (100GB+) Are Uploaded to S3 — Pre-Signed URLs, Multipart Upload, and Real Industry Architecture",
+    description: "Master large-scale file uploads: how pre-signed URLs and multipart uploads power 100GB+ uploads in production systems.",
     url: "https://medium.com/@rushikeshghosalkar023",
-    tags: ["Microservices", ".NET"],
+    tags: ["AWS", "S3", "Backend Architecture", "Cloud Computing"],
   },
   {
-    title: "CQRS: Beyond the Basics",
-    description: "Implementing Command Query Responsibility Segregation with MediatR and Event Sourcing in production systems.",
-    url: "https://medium.com/@rushikeshghosalkar023",
-    tags: ["Architecture", "CQRS"],
+    title: "Exploring Key Microservice Design Patterns: Strangler, Saga, and CQRS",
+    description: "Master Strangler, Saga, and CQRS patterns—the three pillars of scalable microservices architecture.",
+    url: "https://medium.com/@rushikeshghosalkar023/exploring-key-microservice-design-patterns-strangler-saga-and-cqrs-3cbb1ab3dac1",
+    tags: ["Architecture", "System Design", "Microservices"],
   },
   {
-    title: "Strangler Fig Pattern",
-    description: "A practical guide to incrementally migrating legacy monoliths to microservices without downtime.",
-    url: "https://medium.com/@rushikeshghosalkar023",
-    tags: ["Microservices", "Migration"],
+    title: "Database Scaling Guide",
+    description: "Complete guide to database scaling: indexing strategies, concurrency control, partitioning vs sharding, and production-grade optimization for 10M+ rows.",
+    url: "https://github.com/rishighosalkar/SystemDesign/blob/master/Database-Scaling-Guide.md",
+    tags: ["Database", "SQL", "System Design", "Indexing"],
   },
   {
-    title: "System Design: URL Shortener",
-    description: "Designing a scalable URL shortening service — from requirements gathering to database sharding strategies.",
-    url: "https://medium.com/@rushikeshghosalkar023",
-    tags: ["System Design"],
+    title: "AWS Placement Groups Explained: Spread vs Partition vs Cluster (with Real-World Examples)",
+    description: "Optimize EC2 placement: understand Spread for isolation, Partition for distributed systems, and Cluster for low-latency performance.",
+    url: "https://medium.com/@rushikeshghosalkar023/aws-placement-groups-explained-spread-vs-partition-vs-cluster-with-real-world-examples-3e4497e10511",
+    tags: ["AWS", "EC2", "Infrastructure", "Cloud Architecture", "High Availability"],
   },
 ];
 
