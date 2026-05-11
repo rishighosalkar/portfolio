@@ -40,7 +40,6 @@ export const SKILLS: SkillCategory[] = [
       { name: "AWS (Lambda, S3, SQS, SNS)" },
       { name: "Docker" },
       { name: "CI/CD Pipelines" },
-      { name: "Azure DevOps" },
     ],
   },
   {
@@ -86,7 +85,7 @@ export const PROJECTS: Project[] = [
       "Server-side reassembly and S3 multipart upload API integration",
       "Progress tracking and resumable upload support",
     ],
-    category: [".NET", "React", "AWS"],
+    category: [".NET", "AWS"],
   },
 ];
 

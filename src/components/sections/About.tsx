@@ -5,7 +5,7 @@ import GlassCard from "../ui/GlassCard";
 
 const HIGHLIGHTS = [
   { icon: Target, title: "Architect Mindset", text: "Designing systems that scale — from monolith decomposition to event-driven microservices." },
-  { icon: Lightbulb, title: "AI & Innovation", text: "Exploring NLP and AI-powered applications to build intelligent, data-driven solutions." },
+  // { icon: Lightbulb, title: "AI & Innovation", text: "Exploring NLP and AI-powered applications to build intelligent, data-driven solutions." },
   { icon: Globe, title: "Global Ambitions", text: "Seeking opportunities to work on world-class products with distributed engineering teams." },
 ];
 
